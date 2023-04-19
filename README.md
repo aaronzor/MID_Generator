@@ -1,11 +1,12 @@
 # MID Generator
 ---
+<p> Will output an XLSX file for bulk uploading MIDs </p>
 
 ## Usage
 
 * Clone, then run
 ```
-npm install
+npm i
 ```
 
 * Run the Generator with:

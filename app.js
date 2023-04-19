@@ -12,20 +12,20 @@ const midPrefix = process.argv[2];
 const numRows = parseInt(process.argv[3], 10);
 
 // Get a random channel for each MID
-function getRandomChannel() {
+const getRandomChannel = () => {
   const channels = ['Online', 'Offline', 'Unrestricted'];
   return channels[Math.floor(Math.random() * channels.length)];
 }
 
 // Generate a random Narrative for each MID
 // Will generate a number from 0001 to 9999 and append " - Test Narr"
-function getRandomNarrative() {
+const getRandomNarrative = () => {
   const randomNum = Math.floor(Math.random() * 10000);
   return `${randomNum} - Test Narr`;
 }
 
 // Generate MIDs
-function generateMids(midPrefix, numRows) {
+const generateMids = (midPrefix, numRows) => {
   // Create a new workbook
   const workbook = XLSX.utils.book_new();
 

@@ -54,7 +54,8 @@ function generateMids(midPrefix, numRows) {
   // Write the workbook to a file
   const filePath = `${numRows} - testMIDs.xlsx`;
   XLSX.writeFile(workbook, filePath);
-  console.log(`Generated XLSX file: ${filePath} - ${numRows} MIDs Generated`);
+  console.log(`${numRows} MIDs Generated`);
+  console.log(`Generated XLSX file: ${filePath}`);
 }
 
 generateMids(midPrefix, numRows);

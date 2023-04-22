@@ -31,7 +31,7 @@ const generateMids = (midPrefix, numRows) => {
 
   // Define the headers for the worksheet
   const headers = [
-    'MID', 'Acquirer', 'Channel', 'Show Maps', 'Address1', 'Address2', 'City', 'Country', 'Postcode', 'Reference', 'Status', 'Narrative',
+    'MID', 'Acquirer', 'Channel', 'Show Maps', 'Address 1', 'Address 2', 'City', 'Country', 'Postcode', 'Reference', 'Status', 'Narrative',
   ];
 
   // Initialize the data array with the headers
